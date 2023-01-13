@@ -1,0 +1,19 @@
+
+================
+CF7 FORM CONTATO
+================
+
+<div class="row">
+<div class="col-md-8">[text* your-name class:form-control placeholder "NOME COMPLETO*"]</div>
+<div class="col-md-4">[text* your-phone class:form-control placeholder "TELEFONE*"]</div>
+</div>
+<div class="row">
+<div class="col-md-7">[email* your-email class:form-control placeholder "EMAIL*"]</div>
+<div class="col-md-5">[text* your-subject class:form-control placeholder "ASSUNTO*"]</div>
+</div>
+<div class="row">
+<div class="col-12">[textarea* your-message class:form-control placeholder "ESCREVA SUA MENSAGEM*"]</div>
+</div>
+<div class="row">
+<div class="col-12">[submit class:btnSubmit "enviar"]</div>
+</div>

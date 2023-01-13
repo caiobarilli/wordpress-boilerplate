@@ -1,0 +1,18 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+#wordpress
+/cms/*.php
+/cms/*.html
+/cms/*.txt
+/cms/*.htaccess
+/cms/wp-admin/
+/cms/wp-includes/
+/cms/wp-content/*.php
+/cms/wp-content/upgrade/
+/cms/wp-content/languages/
+/cms/wp-content/uploads/
+/cms/wp-content/plugins/
+/cms/wp-content/themes/twentytwenty
+/cms/wp-content/themes/twentytwentyone
+/cms/wp-content/themes/twentytwentytwo
+/cms/wp-content/themes/twentytwentythree
