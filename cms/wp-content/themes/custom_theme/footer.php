@@ -23,7 +23,12 @@
         </div>
     </footer>
 
-    <?php wp_footer(); ?>
+    <?php
+
+    get_template_part('template-parts/modal', 'privacy-policy');
+    wp_footer();
+
+    ?>
 
     </body>
 </html>

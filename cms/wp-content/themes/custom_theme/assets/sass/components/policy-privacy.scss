@@ -1,0 +1,33 @@
+
+#modal-privacy-policy
+{
+    position: fixed;
+    width: 300px;
+    background-color:rgba(77, 76, 76, 0.267);
+    border-radius: 5px;
+    padding: 15px;
+    bottom: 20px;
+    left: 20px;
+
+    .modal-content
+    {
+        p
+        {
+            color: $white;
+        }
+
+        a
+        {
+            color: $black;
+        }
+    }
+
+    .accept-button
+    {
+        background: $black;
+        color: $white;
+        padding: 4px 15px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+}

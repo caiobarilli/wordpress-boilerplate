@@ -14,3 +14,5 @@ import './loadmore-category'
 import './loadmore-tag'
 
 import './search'
+
+import './cookies'
