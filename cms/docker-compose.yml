@@ -49,6 +49,16 @@ services:
         networks:
             - wp
 
+    # Mailhog
+    mailhog:
+        image: mailhog/mailhog
+        ports:
+            - "1025:1025"
+            - "8025:8025"
+        restart: always
+        networks:
+            - wp
+
 networks:
     wp:
 volumes:

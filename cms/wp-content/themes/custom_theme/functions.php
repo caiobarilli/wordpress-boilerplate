@@ -305,6 +305,13 @@ function remove_global_styles()
     wp_dequeue_style('classic-theme-styles');
 }
 
+function send_smtp_email( $phpmailer ) {
+    $phpmailer->isSMTP();
+    $phpmailer->Host       = 'mailhog';
+    $phpmailer->Port       = 1025;
+    $phpmailer->SMTPAuth   = false;
+}
+
 /*------------------------------------*\
     Filters
 \*------------------------------------*/
@@ -341,6 +348,8 @@ add_action('wp_ajax_loadmore_category', 'loadmore_category_ajax_handler'); // Au
 add_action('wp_ajax_nopriv_loadmore_category', 'loadmore_category_ajax_handler'); // Non-authenticated users
 add_action('wp_ajax_loadmore_tags', 'loadmore_tags_ajax_handler'); // Authenticated users
 add_action('wp_ajax_nopriv_loadmore_tags', 'loadmore_tags_ajax_handler'); // Non-authenticated users
+
+add_action( 'phpmailer_init', 'send_smtp_email' ); // SMTP MailHog
 
 // Remove Actions
 remove_action('wp_head', 'print_emoji_detection_script', 7); // Remove wp emoji
