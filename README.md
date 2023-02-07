@@ -30,13 +30,13 @@ git clone git@github.com:caiobarilli/wordpress-boilerplate.git
 
 #
 
-Utilize o comando para construir os conteiners do docker
+Utilize o comando para construir os containers do docker
 
 ```sh
 sh ./_up.sh
 ```
 
-após construir os conteiners do docker acesse o wordpress e atribua as permissões necessarias do container para ativar os plugins
+após construir os containers do docker acesse o wordpress e atribua as permissões necessarias do container para ativar os plugins
 do tema com o comando:
 
 ```sh
