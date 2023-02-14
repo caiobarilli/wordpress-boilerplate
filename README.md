@@ -33,20 +33,19 @@ git clone git@github.com:caiobarilli/wordpress-boilerplate.git
 Utilize o comando para construir os conteiners do docker
 
 ```sh
-sh ./_up.sh
+sh ./app up
 ```
 
-após construir os conteiners do docker acesse o wordpress e atribua as permissões necessarias do container para ativar os plugins
-do tema com o comando:
+Atribua as permissões necessarias do container para ativar os plugins do tema com o comando:
 
 ```sh
-sh ./_container-permissions.sh
+sh ./app permissions
 ```
 
 após ativar o tema e todos os plugins atribua as permissões necessarias para desenvolver na pasta themes com o comando:
 
 ```sh
-sh ./_user-permissions.sh
+sh ./app dev
 ```
 
 Pronto agora você pode acessar a pasta do tema:
