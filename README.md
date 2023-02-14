@@ -30,7 +30,7 @@ git clone git@github.com:caiobarilli/wordpress-boilerplate.git
 
 #
 
-Utilize o comando para construir os conteiners do docker
+Utilize o comando para construir os containers do docker
 
 ```sh
 sh ./app up
