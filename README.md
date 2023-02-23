@@ -1,5 +1,19 @@
 # Wordpress Boilerplate
 
+
+```sh
+
+├── cms/
+│ ├── wp-content/
+│ │ ├── themes/
+│ │ │ └── custom_theme/
+│ │ └── index.php
+│ └── docker-compose.yml
+├── app
+└── .gitignore
+
+```
+
 | app           | host      | port |
 | ------------- | --------- | ---- |
 | **wordpress** | localhost | 8000 |
