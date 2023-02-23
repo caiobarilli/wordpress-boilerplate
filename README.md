@@ -1,8 +1,6 @@
 # Wordpress Boilerplate
 
 
-```sh
-
 ├── cms/
 │ ├── wp-content/
 │ │ ├── themes/
@@ -12,7 +10,6 @@
 ├── app
 └── .gitignore
 
-```
 
 | app           | host      | port |
 | ------------- | --------- | ---- |
