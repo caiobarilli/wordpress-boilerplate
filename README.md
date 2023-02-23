@@ -1,5 +1,7 @@
 # Wordpress Boilerplate
 
+[custom_theme folder](https://github.com/caiobarilli/wordpress-boilerplate/tree/main/cms/wp-content/themes/custom_theme)
+
 ```sh
 ├── cms/ 
 │ ├── wp-content/
@@ -15,9 +17,6 @@
 | ------------- | --------- | ---- |
 | **wordpress** | localhost | 8000 |
 
-<br />
-
-[custom_theme](https://github.com/caiobarilli/wordpress-boilerplate/tree/main/cms/wp-content/themes/custom_theme)
 
 <br />
 
