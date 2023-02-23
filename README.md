@@ -1,15 +1,17 @@
 # Wordpress Boilerplate
 
-<br>
-├── cms/ <br>
-│ ├── wp-content/ <br>
-│ │ ├── themes/ <br>
-│ │ │ └── [custom_theme](https://github.com/caiobarilli/wordpress-boilerplate/tree/main/cms/wp-content/themes/custom_theme)
+```sh
+├── cms/ 
+│ ├── wp-content/
+│ │ ├── themes/ 
+│ │ │ └── custom_theme/
 │ │ └── index.php
 │ └── docker-compose.yml
 ├── app
 └── .gitignore
+```
 
+[custom_theme](https://github.com/caiobarilli/wordpress-boilerplate/tree/main/cms/wp-content/themes/custom_theme)
 
 | app           | host      | port |
 | ------------- | --------- | ---- |
