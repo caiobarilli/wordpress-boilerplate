@@ -1,11 +1,11 @@
 # Wordpress Boilerplate
 
 [custom_theme](https://github.com/caiobarilli/wordpress-boilerplate/tree/main/cms/wp-content/themes/custom_theme)
-
+[custom_theme_woocommerce](https://github.com/caiobarilli/wordpress-boilerplate/tree/main/cms/wp-content/themes/custom_theme_woocommerce)
 ```sh
-├── cms/ 
+├── cms/
 │ ├── wp-content/
-│ │ ├── themes/ 
+│ │ ├── themes/
 │ │ │ └── custom_theme/
 │ │ └── index.php
 │ └── docker-compose.yml
