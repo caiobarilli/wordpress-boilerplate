@@ -1,0 +1,49 @@
+
+#search-blog
+{
+    max-width: 100%;
+    position: relative;
+    z-index: $layer;
+
+    input[type=text]
+    {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 1.8rem;
+        background-color: $gray;
+        color: $white;
+        border-color: $gray;
+        border-radius: 10px 0 0 10px;
+        line-height: 1rem;
+        padding: 15px;
+
+        &::placeholder
+        {
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        &:focus
+        {
+            &::placeholder
+            {
+                color: transparent;
+            }
+        }
+    }
+
+    .btn-search
+    {
+        border-color: $gray;
+        background-color: $gray;
+        border-radius: 0 10px 10px 0;
+        color: $white;
+        padding: 12px 20px;
+
+        svg
+        {
+            max-width: 100%;
+        }
+    }
+}

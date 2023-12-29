@@ -1,0 +1,11 @@
+
+.Custom Theme_product_infos
+{
+    .price {
+        display: none;
+        opacity: 0;
+        z-index: -99;
+        margin-bottom: 0 !important;
+        font-size: 0 !important;
+    }
+}

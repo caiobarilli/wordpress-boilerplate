@@ -1,0 +1,124 @@
+
+#page_search
+{
+    header
+    {
+        .header-content
+        {
+            margin: 2rem 0 0;
+        }
+    }
+
+    .search-filter
+    {
+        margin: 2rem 0;
+
+        .filter-content
+        {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+
+            h3
+            {
+                font-family: "Roboto";
+                font-size: 1.6rem;
+                font-weight: 400;
+
+                strong
+                {
+                    font-weight: 600;
+                }
+            }
+
+            .form-order
+            {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+
+                p
+                {
+                    font-family: "Roboto";
+                    font-size: 1.6rem;
+                    padding: 0;
+                    margin: 0;
+                    margin-right: 5px;
+                    font-weight: 300;
+
+                    strong
+                    {
+                        font-weight: 400;
+                    }
+                }
+
+                #filter_sort
+                {
+                    select
+                    {
+                        font-family: "Roboto";
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        border-radius: 5px;
+                        padding: .45rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .wrap-posts
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+
+        .post-search
+        {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            text-decoration: none;
+            margin-bottom: 2rem;
+
+            .post-image
+            {
+                height: auto;
+            }
+
+            .post-content
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 1px solid $gray;
+                border-radius: 0 5px 5px 0;
+                border-left: 0;
+                padding: 2rem;
+                width: 100%;
+
+                h2
+                {
+                    font-family: "Roboto";
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    color: $black;
+                    text-transform: uppercase;
+                }
+
+                .post-date
+                {
+                    color: $black;
+                }
+
+            }
+        }
+    }
+}

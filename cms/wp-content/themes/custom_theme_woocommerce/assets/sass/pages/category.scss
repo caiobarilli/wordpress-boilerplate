@@ -1,0 +1,71 @@
+
+#page_category
+{
+    .header-content
+    {
+        h1
+        {
+            font-family: "Roboto";
+            font-weight: 400;
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+            strong
+            {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .category-content
+    {
+        .wrap-posts
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+
+            .post-search
+            {
+                display: flex;
+                flex-direction: row;
+                overflow: hidden;
+                text-decoration: none;
+                margin-bottom: 2rem;
+
+                .post-image
+                {
+                    height: auto;
+                }
+
+                .post-content
+                {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    border: 1px solid $gray;
+                    border-radius: 0 5px 5px 0;
+                    border-left: 0;
+                    padding: 2rem;
+                    width: 100%;
+
+                    h2
+                    {
+                        font-family: "Roboto";
+                        font-weight: 600;
+                        font-size: 1.6rem;
+                        color: $black;
+                        text-transform: uppercase;
+                    }
+
+                    .post-date
+                    {
+                        color: $black;
+                    }
+
+                }
+            }
+        }
+    }
+
+}

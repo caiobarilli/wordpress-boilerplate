@@ -1,0 +1,43 @@
+
+#loadmore-search,
+#loadmore-category,
+#loadmore-tags,
+#loadmore
+{
+    position: relative;
+
+    input[type=button]
+    {
+        background-color: $gray;
+        font-family: 'Roboto';
+        font-weight: 800;
+        font-size: 17px;
+        color: $white;
+        width: 460px;
+        max-width: 100%;
+        height: 65px;
+        border: 0;
+        border-radius: 10px;
+        margin-top: 2rem;
+
+        @include media-breakpoint-down(lg)
+        {
+            width: 320px;
+            margin: 0;
+        }
+    }
+}
+
+.loading
+{
+    &::after
+    {
+        content: '';
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        background: url('/assets/img/spinner.svg');
+        background-position: center;
+        margin: -45px 0 0;
+    }
+}

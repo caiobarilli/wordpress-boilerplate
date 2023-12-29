@@ -1,0 +1,32 @@
+{
+  "name": "custom_theme_woocommerce",
+  "version": "1.0.0",
+  "description": "wordpress theme",
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "webpack build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@popperjs/core": "^2.11.6",
+    "autoprefixer": "^10.4.13",
+    "axios": "^1.2.2",
+    "bootstrap": "^5.2.3",
+    "browser-sync": "^2.29.3",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "css-loader": "^6.7.3",
+    "jquery": "^3.7.1",
+    "lazyload": "^2.0.0-rc.2",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss-loader": "^7.0.2",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-bundle-analyzer": "^4.10.1",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
