@@ -1,5 +1,5 @@
 
-.Custom Theme_product_infos
+.Custom_Theme_product_infos
 {
     .price {
         display: none;
@@ -8,4 +8,9 @@
         margin-bottom: 0 !important;
         font-size: 0 !important;
     }
+}
+
+.cart_wrapper
+{
+    position: relative;
 }

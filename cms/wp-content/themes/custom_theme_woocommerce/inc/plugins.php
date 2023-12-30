@@ -34,6 +34,14 @@ function custom_theme_woocommerce_require_plugins()
         ),
 
         // array(
+        //     'name'              => 'Classic Editor',
+        //     'slug'              => 'classic-editor',
+        //     'source'            => get_stylesheet_directory() . '/plugins/classic-editor.zip',
+        //     'required'          => true,
+        //     'external_url'      => 'https://br.wordpress.org/plugins/classic-editor/',
+        // ),
+
+        // array(
         //     'name'               => 'Advanced Custom Fields',
         //     'slug'               => 'advanced-custom-fields',
         //     'source'             => get_stylesheet_directory() . '/plugins/advanced-custom-fields.5.9.5.zip',
