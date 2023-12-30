@@ -22,7 +22,7 @@ if [ "$str" = "bash" ]; then
 fi
 
 # Permissões do container
-if [ "$str" = "permissions" ]; then
+if [ "$str" = "permissions:container" ]; then
     docker exec -it $container_id /bin/bash -c "
     chown -R www-data:www-data /var/www/html/
     cd /var/www/html/wp-content
@@ -36,7 +36,7 @@ if [ "$str" = "permissions" ]; then
 fi
 
 # Permissões de desenvolvimento
-if [ "$str" = "dev" ]; then
+if [ "$str" = "permissions:dev" ]; then
     docker exec -it $container_id /bin/bash -c "
     chown -R 1000:1000 /var/www/html/wp-content/themes
     cd /var/www/html/wp-content

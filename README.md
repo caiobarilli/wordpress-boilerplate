@@ -54,7 +54,8 @@ sh ./app up
 Atribua as permissões necessarias do container para ativar os plugins do tema com o comando:
 
 ```sh
-sh ./app permissions
+sh ./app permissions:container
+sh ./app permissions:dev
 ```
 
 após ativar o tema e todos os plugins atribua as permissões necessarias para desenvolver na pasta themes com o comando:

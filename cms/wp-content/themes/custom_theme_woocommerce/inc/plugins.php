@@ -33,32 +33,32 @@ function custom_theme_woocommerce_require_plugins()
             'force_deactivation' => true,
         ),
 
-        array(
-            'name'               => 'Advanced Custom Fields',
-            'slug'               => 'advanced-custom-fields',
-            'source'             => get_stylesheet_directory() . '/plugins/advanced-custom-fields.5.9.5.zip',
-            'required'           => true,
-            'external_url'       => 'https://br.wordpress.org/plugins/advanced-custom-fields/',
-            'force_deactivation' => true,
-        ),
+        // array(
+        //     'name'               => 'Advanced Custom Fields',
+        //     'slug'               => 'advanced-custom-fields',
+        //     'source'             => get_stylesheet_directory() . '/plugins/advanced-custom-fields.5.9.5.zip',
+        //     'required'           => true,
+        //     'external_url'       => 'https://br.wordpress.org/plugins/advanced-custom-fields/',
+        //     'force_deactivation' => true,
+        // ),
 
-        array(
-            'name'               => 'Custom Post Type UI',
-            'slug'               => 'custom-post-type-ui',
-            'source'             => get_stylesheet_directory() . '/plugins/custom-post-type-ui.1.8.2.zip',
-            'required'           => true,
-            'external_url'       => 'https://br.wordpress.org/plugins/custom-post-type-ui/',
-            'force_deactivation' => true,
-        ),
+        // array(
+        //     'name'               => 'Custom Post Type UI',
+        //     'slug'               => 'custom-post-type-ui',
+        //     'source'             => get_stylesheet_directory() . '/plugins/custom-post-type-ui.1.8.2.zip',
+        //     'required'           => true,
+        //     'external_url'       => 'https://br.wordpress.org/plugins/custom-post-type-ui/',
+        //     'force_deactivation' => true,
+        // ),
 
-        array(
-            'name'               => 'Safe Svg',
-            'slug'               => 'safe-svg',
-            'source'             => get_stylesheet_directory() . '/plugins/safe-svg.1.9.9.zip',
-            'required'           => false,
-            'external_url'       => 'https://pt.wordpress.org/plugins/safe-svg/',
-            'force_deactivation' => true,
-        ),
+        // array(
+        //     'name'               => 'Safe Svg',
+        //     'slug'               => 'safe-svg',
+        //     'source'             => get_stylesheet_directory() . '/plugins/safe-svg.1.9.9.zip',
+        //     'required'           => false,
+        //     'external_url'       => 'https://pt.wordpress.org/plugins/safe-svg/',
+        //     'force_deactivation' => true,
+        // ),
 
         // array(
         //     'name'               => 'Contact Form 7',
