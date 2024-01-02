@@ -24,7 +24,7 @@ function remove_admin_bar()
 {
     return false;
 }
-// add_filter('show_admin_bar', 'remove_admin_bar');
+add_filter('show_admin_bar', 'remove_admin_bar');
 
 /**
  * Remove global styles from WordPress
@@ -56,7 +56,7 @@ add_action('wp_enqueue_scripts', 'remove_global_styles', 99);
 /**
  * Remove auto p tag on contact form 7
  */
-add_filter('wpcf7_autop_or_not', '__return_false');
+// add_filter('wpcf7_autop_or_not', '__return_false');
 
 /**
  * Remove Emoji

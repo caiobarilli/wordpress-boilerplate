@@ -93,7 +93,6 @@ function script_defer_attribute($tag, $handle, $src)
 }
 add_filter('script_loader_tag', 'script_defer_attribute', 10, 3);
 
-
 /*------------------------------------*\
     Custom Login Page
 \*------------------------------------*/
@@ -143,19 +142,19 @@ add_action('login_head', 'change_logo_login_head');
    Minify HTML
 \*------------------------------------*/
 
-// function minify_html()
-// {
-//     ob_start('html_minify');
-// }
+function minify_html()
+{
+    ob_start('html_minify');
+}
 
-// function html_minify($buffer)
-// {
-//     $search = array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s');
-//     $replace = array('>', '<', '\\1');
-//     $buffer = preg_replace($search, $replace, $buffer);
-//     return $buffer;
-// }
+function html_minify($buffer)
+{
+    $search = array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s');
+    $replace = array('>', '<', '\\1');
+    $buffer = preg_replace($search, $replace, $buffer);
+    return $buffer;
+}
 
-// if (!is_admin()) {
-//     add_action('init', 'minify_html');
-// }
+if (!is_admin()) {
+    add_action('init', 'minify_html');
+}

@@ -17,7 +17,6 @@
 
 get_header();
 ?>
-
 <section id="page_blog">
     <header>
         <div class="container">

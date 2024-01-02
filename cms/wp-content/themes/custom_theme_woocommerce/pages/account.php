@@ -5,7 +5,7 @@
  *
  * @package CustomTheme
  *
- * Template Name: Cart
+ * Template Name: Account
  *
  */
 
@@ -16,7 +16,7 @@ get_header();
 <div class="container">
     <div class="cart_wrapper">
         <div class="full-cart">
-            <?php echo do_shortcode('[woocommerce_cart]'); ?>
+            <?php echo do_shortcode('[woocommerce_my_account]'); ?>
         </div>
     </div>
 </div>

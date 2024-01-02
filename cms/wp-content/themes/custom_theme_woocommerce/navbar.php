@@ -30,5 +30,17 @@
         </button>
 
         <?php main_nav(); ?>
+
+        <div>
+            <div id="carrinho-itens">
+                <a href="<?php echo wc_get_cart_url(); ?>" class="cart-contents">
+                    <?php if (WC()->cart->get_cart_contents_count() === 0) : ?>
+                        <img src="<?php echo get_theme_file_uri('assets/img/cart.svg'); ?>" alt="Cart" />
+                        <?php _e('Ver Carrinho', '') ?>
+                    <?php endif; ?>
+                </a>
+            </div>
+        </div>
+
     </div>
 </nav>

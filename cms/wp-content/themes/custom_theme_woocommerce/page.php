@@ -15,29 +15,17 @@
 
 get_header();
 
-woocommerce_content();
-
-do_shortcode('[woocommerce_cart]');
 ?>
 
-<section id="page_blog">
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <?php get_template_part('searchform'); ?>
-            </div>
-        </div>
-    </header>
-
-    <div class="sticky-post">
-        <div class="container">
-            <?php get_template_part('loop-sticky-post'); ?>
-        </div>
-    </div>
-
-    <div id="loop-posts">
-        <div class="container">
-            <?php get_template_part('loop'); ?>
+<section id="page_blank">
+    <div class="container">
+        <div class="page-content">
+            <?php
+            while (have_posts()) :
+                the_post();
+                the_content();
+            endwhile; // End of the loop.
+            ?>
         </div>
     </div>
 </section>

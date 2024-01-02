@@ -15,6 +15,7 @@
 \*------------------------------------*/
 
 define('THEME_VERSION', wp_get_theme()->get('Version'));
+define('WPLANG', 'pt_BR');
 
 /*------------------------------------*\
     External Modules/Files
@@ -77,6 +78,7 @@ function header_scripts()
         wp_localize_script('custom_theme_woocommerce_scripts', 'loadmore_search_params', $loadmoreParams);
         wp_localize_script('custom_theme_woocommerce_scripts', 'loadmore_category_params', $loadmoreParams);
         wp_localize_script('custom_theme_woocommerce_scripts', 'loadmore_tags_params', $loadmoreParams);
+        wp_localize_script('custom_theme_woocommerce_scripts', 'cart_params', array('ajax_url' => admin_url('admin-ajax.php')));
         wp_enqueue_script('custom_theme_woocommerce_scripts'); // Enqueue it!
     }
 }

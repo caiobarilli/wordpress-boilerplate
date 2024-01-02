@@ -7,15 +7,15 @@ let loadmoreSearchForm = document.querySelector("#loadmore-search"),
 const loadmore = (e) => {
   e.preventDefault();
 
-  let url = loadmore_search_params.ajaxurl,
+  let url = loadmore_params.ajaxurl,
   data = new FormData(),
   max_page_posts = e.target.attributes.total.value,
   s_query = e.target.attributes.s.value,
   order = e.target.attributes.order.value;
 
   data.append("action", "loadmore_search");
-  data.append("query", loadmore_search_params.posts);
-  data.append("page", loadmore_search_params.current_page);
+  data.append("query", loadmore_params.posts);
+  data.append("page", loadmore_params.current_page);
   data.append("s_query", s_query);
   data.append("order", order);
 
@@ -25,8 +25,8 @@ const loadmore = (e) => {
   axios
   .post(url, data)
   .then(function (response) {
-    loadmore_search_params.current_page++;
-    if (loadmore_search_params.current_page == max_page_posts) loadmoreSearchForm.remove();
+    loadmore_params.current_page++;
+    if (loadmore_params.current_page == max_page_posts) loadmoreSearchForm.remove();
     wrapPostSearch.insertAdjacentHTML("beforeend", response.data);
     loadmoreSearchForm.classList.remove("loading");
     loadmoreBtnSearch.value = 'Carregar Mais Notícias';
