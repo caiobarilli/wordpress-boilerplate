@@ -155,6 +155,12 @@ function html_minify($buffer)
     return $buffer;
 }
 
-if (!is_admin()) {
-    add_action('init', 'minify_html');
+// if (!is_admin()) {
+//     add_action('init', 'minify_html');
+//     add_action('shutdown', 'flush_html_minify');
+// }
+
+function flush_html_minify()
+{
+    ob_end_flush();
 }
