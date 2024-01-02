@@ -50,20 +50,22 @@ if (!function_exists('Custom_Theme_product_infos_close')) {
 add_action('woocommerce_shop_loop_item_title', 'Custom_Theme_product_infos_open', 0);
 add_action('woocommerce_after_shop_loop_item', 'Custom_Theme_product_infos_close', 10);
 
-function get_cart_items()
-{
-    ob_start(); // Turn on output buffering
-    $items = WC()->cart->get_cart();
-    $cart_count = WC()->cart->get_cart_contents_count();
-    echo '<img src="' . get_theme_file_uri('assets/img/cart-full.svg') . '" alt="Cart" />';
-    echo '<span class="cart-contents-count">' . $cart_count . '</span>';
-    foreach ($items as $item => $values) {
-        $product = wc_get_product($values['data']->get_id());
-        echo '<p>' . esc_html($product->get_name()) . ' ' . wc_price($values['data']->get_price()) . '</p>';
+if (!function_exists('get_cart_items')) {
+    function get_cart_items()
+    {
+        ob_start(); // Turn on output buffering
+        $items = WC()->cart->get_cart();
+        $cart_count = WC()->cart->get_cart_contents_count();
+        echo '<img src="' . get_theme_file_uri('assets/img/cart-full.svg') . '" alt="Cart" />';
+        echo '<span class="cart-contents-count">' . $cart_count . '</span>';
+        foreach ($items as $item => $values) {
+            $product = wc_get_product($values['data']->get_id());
+            echo '<p>' . esc_html($product->get_name()) . ' ' . wc_price($values['data']->get_price()) . '</p>';
+        }
+        $response = ob_get_clean(); // Clear and return output
+        echo $response;
+        die();
     }
-    $response = ob_get_clean(); // Clear and return output
-    echo $response;
-    die();
 }
 add_action('wp_ajax_get_cart_items', 'get_cart_items');
 add_action('wp_ajax_nopriv_get_cart_items', 'get_cart_items');

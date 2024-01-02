@@ -1,5 +1,3 @@
-const { set } = require("immutable");
-
 $.when($.ready).then(function () {
 
     /**
