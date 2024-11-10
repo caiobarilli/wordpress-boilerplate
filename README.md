@@ -3,6 +3,7 @@
 [custom_theme](https://github.com/caiobarilli/wordpress-boilerplate/tree/main/cms/wp-content/themes/custom_theme)
 <br/>
 [custom_theme_woocommerce](https://github.com/caiobarilli/wordpress-boilerplate/tree/main/cms/wp-content/themes/custom_theme_woocommerce)
+
 ```sh
 ├── cms/
 │ ├── wp-content/
@@ -17,7 +18,6 @@
 | app           | host      | port |
 | ------------- | --------- | ---- |
 | **wordpress** | localhost | 8000 |
-
 
 <br />
 
